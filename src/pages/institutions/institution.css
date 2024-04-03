@@ -1,0 +1,13 @@
+.course-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the space between cards as necessary */
+  justify-content: center; /* Center the cards in the container */
+}
+
+.course-card {
+  flex: 1; /* Each card will grow to fit the container */
+  min-width: calc(50% - 20px); /* For 2 cards in a row considering the gap */
+  max-width: calc(50% - 20px); /* For 2 cards in a row considering the gap */
+  /* Other styles for the card */
+}

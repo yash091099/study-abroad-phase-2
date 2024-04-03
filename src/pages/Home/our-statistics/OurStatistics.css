@@ -1,0 +1,124 @@
+/* OurStatistics.css */
+
+/* Base styles */
+.w-full {
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-center {
+  align-items: center; /* Center items vertically */
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between; /* Distribute space between items */
+}
+
+.py-3_125rem {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+}
+
+.px-1_25rem {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.box-border {
+  box-sizing: border-box;
+}
+
+.tracking-normal {
+  letter-spacing: normal;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.md\:w-50 {
+  width: 50%;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  .flex-row {
+      flex-direction: row;
+  }
+
+  .md\:flex {
+      display: flex;
+  }
+
+  .md\:hidden {
+      display: none;
+  }
+
+  .md\:justify-end {
+      justify-content: flex-end;
+  }
+
+  .md\:px-0 {
+      padding-left: 0;
+      padding-right: 0;
+  }
+
+  .md\:items-center {
+      align-items: center; /* Center items vertically for medium screens and up */
+  }
+}
+
+@media (max-width: 768px) {
+  .flex-row {
+      flex-direction: column-reverse;
+  }
+
+  .text-section, .image-section {
+      width: 100%;
+  }
+
+  .text-section {
+      padding: 2rem 1rem; /* Increase padding for better readability on small screens */
+  }
+}
+
+/* Specific adjustments */
+.text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto; /* Ensure image is responsive */
+}
+
+/* Ensure the text content is always in the middle of the image on the left side */
+@media (min-width: 768px) {
+  .our-statistics-container {
+      display: flex;
+      align-items: center; /* Align items vertically */
+      justify-content: space-between; /* Space between text and image */
+  }
+}

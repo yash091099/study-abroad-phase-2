@@ -1,0 +1,105 @@
+/* Universities.css */
+.universities-container {
+    max-width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+  }
+  
+  .universities-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .university-icon {
+    height: 58px;
+    width: 58px;
+  }
+  
+  .universities-header h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .university-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+  
+  .university-card {
+    border: 0.9px solid #c0c0c0;
+    border-radius: 21.92px;
+    /* padding: 1rem; */
+    width: calc(25% - 20px); /* Adjust width for 4 cards per row */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .university-info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .university-name {
+    font-size: 1.2rem;
+    margin-right: auto; /* Pushes the logo to the right */
+  }
+  
+  .university-logo {
+    width: 60px; /* Adjust as needed */
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .university-country {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  @media (max-width: 1200px) {
+    .university-card {
+      width: calc(33.333% - 20px); /* Adjust width for 3 cards per row */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .university-card {
+      width: calc(50% - 20px); /* Adjust width for 2 cards per row */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .university-card {
+      width: 100%; /* Full width on smaller screens */
+    }
+  }
+  

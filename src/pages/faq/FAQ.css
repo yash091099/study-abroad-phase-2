@@ -1,0 +1,85 @@
+/* Base Styles */
+.faq-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px; /* Updated to a consistent padding */
+  box-sizing: border-box;
+  flex-wrap: wrap; /* Allow the content and image to wrap on smaller screens */
+}
+
+.faq-main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adjusted gap */
+}
+
+/* Adjust title and description font sizes for different devices */
+.title, .faq-title {
+  font-size: 2rem; /* Base font size */
+}
+
+.description, .faq-description {
+  font-size: 1rem; /* Base font size */
+}
+
+/* Cards/Sections Styles */
+.faq-section, .cards-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  gap: 16px; /* Adjusted gap for responsiveness */
+}
+
+/* Image Styles */
+.faq-image-container, .faq-image {
+  max-width: 300px; /* Adjusted max width for consistency */
+  height: auto;
+  margin-left: auto; /* Push the image to the right */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1275px) {
+  .faq-container {
+    padding: 24px; /* Adjusted padding */
+  }
+
+  .faq-image-container, .faq-image {
+    max-width: 250px; /* Slightly smaller image on medium screens */
+  }
+}
+
+@media (max-width: 825px) {
+  .faq-main-content {
+    padding: 0; /* Remove padding */
+    gap: 16px; /* Smaller gap */
+  }
+
+  .faq-container {
+    flex-direction: column; /* Stack content and image vertically */
+    align-items: center; /* Center-align the stacked items */
+  }
+
+  .faq-image-container, .faq-image {
+    max-width: 100%; /* Full width for the image */
+    margin: 0; /* Reset margin */
+  }
+
+  .title, .faq-title {
+    font-size: 1.8rem; /* Slightly smaller font size for titles */
+  }
+
+  .description, .faq-description {
+    font-size: 0.9rem; /* Slightly smaller font size for descriptions */
+  }
+}
+
+@media (max-width: 450px) {
+  .title, .faq-title, .card-title {
+    font-size: 1.5rem; /* Further reduced font size for very small devices */
+  }
+
+  .description, .faq-description, .card-description {
+    font-size: 0.8rem; /* Further reduced font size for very small devices */
+  }
+}

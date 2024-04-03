@@ -1,0 +1,75 @@
+.blogs-container {
+  width: 100%;
+  max-width: 90%; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.blogs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.blogs-icon {
+  /* Your styles for the icon */
+}
+
+.blogs-search input[type="text"] {
+  /* Your styles for the search input */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 300px;
+  margin-right: 40px;
+
+}
+
+.blogs-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.blogs-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Adjust the spacing between rows */
+}
+
+.blogs-cards, .blogs-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the spacing between cards */
+}
+
+/* Styles for individual blog cards */
+.blog3 {
+  flex: 0 0 calc(25% - 20px); /* Adjust the width minus the gap */
+  /* Additional styles for the blog cards */
+}
+
+/* Styles for sidebar components */
+.frame-component14 {
+  flex: 0 0 calc(25% - 20px); /* Adjust the width minus the gap */
+  /* Additional styles for the sidebar components */
+}
+
+/* If you're targeting a responsive design, consider adding media queries */
+@media (max-width: 768px) {
+  .blog3, .frame-component14 {
+    flex-basis: calc(50% - 20px); /* Adjust for smaller screens */
+  }
+
+  .blogs-row {
+    flex-direction: column;
+  }
+}
+
+/* Media query for very small screens */
+@media (max-width: 480px) {
+  .blog3, .frame-component14 {
+    flex-basis: 100%; /* Full width on small screens */
+  }
+}

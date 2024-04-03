@@ -1,0 +1,67 @@
+.courses-listing-container {
+    margin-bottom: 20px;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  
+  .top-row, .second-row {
+    margin-bottom: 20px;
+  }
+  
+  .courses-cards, .courses-filters {
+    padding: 15px;
+  }
+  
+  .compare-button {
+    border: none;
+    padding: 10px 20px;
+    background-color: crimson;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .courses-listing-container .row {
+    margin-top: 20px;
+  }
+  
+  .courses-listing-container .row:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  /* Adapt further styling as needed */
+  
+  
+  @media (max-width: 768px) {
+    .top-row, .second-row {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .top-row .col-md-5, .second-row .col-md-5 {
+      text-align: start;
+      margin-top: 20px;
+    }
+  }
+  /* Responsive adjustments for the filter section */
+@media (max-width: 767px) {
+    .filter-section {
+      padding: 15px;
+      background-color: #FFF0F0; /* Light pink background for the filter section */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .filter-section {
+      /* Adjustments for tablets and desktops */
+    }
+  }
+  @media (max-width: 768px) {
+    .filter-section, .min-w-[435px] {
+      min-width: 0; /* Reset min-width for small screens */
+      width: 100%; /* Make the filter section take full width on small screens */
+    }
+  }
+  body, .courses-listing-container {
+    overflow-x: hidden; /* Hide horizontal overflow at the body or container level */
+  }
+    

@@ -1,0 +1,52 @@
+.refund-policy-container {
+    /* max-width: 800px; */
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .refund-header h1 {
+    width: 100%;
+    text-align: left;
+    font-size: 2.5rem;
+    color: #FF5573; /* Keeping your specified pinkish tone */
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  .refund-main {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .refund-main section {
+    margin-bottom: 20px;
+  }
+  
+  .refund-main h2 {
+    color: #555;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .refund-main p, .refund-main ul {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .refund-main ul {
+    padding-left: 20px;
+  }
+  
+  .refund-main li {
+    margin-bottom: 5px;
+  }
+  
+  footer p {
+    text-align: center;
+    color: #777;
+    margin-top: 20px;
+  }
+  

@@ -1,0 +1,223 @@
+.home-page-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .top-section {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .content {
+    width: 50%;
+    padding-left: 2rem;
+  }
+  
+  .title-home {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #FF5573;
+  }
+  
+  .subtitle {
+    font-size: 2rem;
+    color: #696969;
+  }
+  
+  .explore-button {
+    background-color: #FF5573;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .image-container {
+    width: 50%;
+    text-align: right;
+  }
+  
+  .main-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .search-section {
+    width: 90%;
+    background-color: #FFF0F5; /* Lavender blush color */
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 2rem auto; /* Added auto margins to center the search section */
+  }
+  
+  /* ... the rest of your styles ... */
+  
+  
+  .search-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .search-form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .search-form input {
+    padding: 0.5rem;
+    border: 1px solid #A9A9A9;
+    border-radius: 5px;
+    font-size: 1.75rem;
+  }
+  
+  .search-button {
+    background-color: #FF5573;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  /* Base Styles */
+.search-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.search-section .w-[104.875rem],
+.search-section .max-w-full {
+  max-width: 100%;
+  padding: 2rem 5rem;
+  box-sizing: border-box;
+}
+
+.search-section h3 {
+  font-size: 2.5rem;
+}
+
+.search-section input {
+  border: none;
+  outline: none;
+  background: transparent;
+  text-align: left;
+}
+
+/* Responsiveness */
+@media (max-width: 1275px) {
+  .search-section .mq1275\:pl-\[2.5rem\],
+  .search-section .mq1275\:pr-\[2.5rem\] {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .search-section .mq1275\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .search-section .min-w-[58rem],
+  .search-section .min-w-[22.313rem] {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .search-section h3.mq750\:text-\[2rem\] {
+    font-size: 2rem;
+  }
+
+  .search-section input.mq450\:text-\[1.375rem\] {
+    font-size: 1.375rem;
+  }
+
+  .search-section .mq750\:min-w-full {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .search-section h3.mq450\:text-\[1.5rem\] {
+    font-size: 1.5rem;
+  }
+}
+
+/* Search Button */
+.search-section div[style*="cursor: pointer"] {
+  cursor: pointer;
+}
+
+.search-section .rounded-tl-none {
+  border-top-left-radius: 0;
+}
+
+.search-section .rounded-tr-3xs {
+  border-top-right-radius: 10px; /* Example, adjust as needed */
+}
+
+.search-section .rounded-br-3xs {
+  border-bottom-right-radius: 10px; /* Example, adjust as needed */
+}
+
+.search-section .rounded-bl-none {
+  border-bottom-left-radius: 0;
+}
+
+  
+  /* Responsive styles */
+  @media (max-width: 1024px) {
+    .top-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .content, .image-container {
+      width: 100%;
+      padding-left: 0;
+      text-align: center;
+    }
+  
+    .image-container {
+      order: -1; /* This will put the image above the text on smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .title-home {
+      font-size: 3rem;
+      font-weight: 400;
+    }
+  
+    .subtitle {
+      font-size: 1.5rem;
+    }
+  
+    .explore-button {
+      padding: 0.8rem 1.6rem;
+    }
+  
+    .search-form {
+      flex-direction: column;
+    }
+  
+    .search-form input,
+    .search-button {
+      width: 100%;
+      margin: 0.5rem 0;
+    }
+  }
+  

@@ -1,0 +1,31 @@
+/* Adjusting the width of each filter input container to ensure responsiveness */
+.flex-1 {
+    min-width: 0; /* Overcomes the default min-width of flex items */
+  }
+  
+  /* Ensuring input fields use available space */
+  .flex-1 input[type="text"] {
+    width: 100%; /* Takes the full width of its parent */
+    max-width: calc(100% - 40px); /* Adjusts based on the icon width and padding */
+    box-sizing: border-box; /* Includes padding and border in the element's total width */
+  }
+  
+  @media (max-width: 800px) {
+    /* Stacking filters vertically on smaller screens */
+    .flex-1 {
+      min-width: 100%; /* Each filter item takes the full width */
+      padding: 10px 0; /* Adds vertical padding for spacing */
+    }
+  
+    .flex-1 input[type="text"] {
+      max-width: calc(100% - 70px); /* Adjust for smaller screens */
+    }
+  }
+  
+  /* Adjusting the search button size for responsiveness */
+  .h-[84px] {
+    width: 100%; /* Ensure the search button extends full width of its container */
+    max-width: 200px; /* Optional: Adjust based on your design needs */
+    margin-top: 20px; /* Adds some space above the search button */
+  }
+  

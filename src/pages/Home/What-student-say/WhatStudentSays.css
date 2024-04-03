@@ -1,0 +1,130 @@
+/* WhatStudentSays.css */
+.what-student-says-container-what-student {
+    max-width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+  
+  .title-what-student {
+    font-size: 2rem;
+    color: #333;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .description-what-student {
+    font-size: 1rem;
+    color: #666;
+    text-align: left;
+    margin-bottom: 32px;
+    width: 100%;
+  }
+  
+  .content-container-what-student {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .video-container-what-student {
+    position: relative;
+    width: 50%;
+    cursor: pointer;
+  }
+  
+  .play-button-what-student {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    /* Style as needed */
+  }
+  
+  .video-thumbnail-what-student {
+    width: 100%;
+    height: 700px;
+    display: block;
+    border-radius: 11px;
+  }
+  
+  .youtube-video-what-student {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  
+  .reviews-container-what-student {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 50%;
+    max-width: 1028px;
+  }
+  
+  .student-review-card-what-student {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    align-items: center;
+  }
+  
+  .student-image-what-student {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+  }
+  
+  .review-content-what-student {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .student-name-what-student {
+    font-size: 1.2rem;
+  }
+  
+  .stars-what-student {
+    display: flex;
+    gap: 4px;
+    margin: 5px 0;
+  }
+  
+  .star-image-what-student {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .student-review-what-student {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+  
+  @media (max-width: 1200px) {
+    .content-container-what-student {
+      flex-direction: column;
+    }
+    
+    .video-container-what-student, .reviews-container-what-student {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .reviews-container-what-student {
+      grid-template-columns: 1fr;
+    }
+  }
+  

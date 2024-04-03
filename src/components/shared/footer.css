@@ -1,0 +1,114 @@
+.footer-container {
+    position: relative;
+    bottom: 0px;
+    width: 100vw;
+    background-color: var(--primary-1); /* Replace with your actual primary color */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 12px;
+    gap: 40px;
+    color: white;
+    font-family: 'Gilroy', sans-serif;
+  }
+  
+  .footer-row {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap in smaller screens */
+    justify-content: space-between;
+    padding: 0 5px;
+    gap: 20px;
+  }
+  
+  .footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .footer-item img, .footer-item div {
+    cursor: pointer;
+  }
+  
+  .footer-socials {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  
+  .footer-social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .footer-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-item {
+      width: 90%; /* Full width with some margin */
+    }
+  
+    .footer-socials {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-container {
+      gap: 20px;
+    }
+  
+    .footer-item {
+      gap: 20px;
+    }
+  
+    .footer-social-icon {
+      height: 30px;
+      width: 30px;
+      border-radius: 15px;
+    }
+  }
+  .footer-social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 0; /* Add this line */
+  }
+  
+  .footer-social-icon img {
+    height: 24px; /* Adjust as needed */
+    width: auto; /* Keeps aspect ratio */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    .footer-social-icon {
+      height: 30px;
+      width: 30px;
+      border-radius: 15px;
+    }
+  
+    .footer-social-icon img {
+      height: 18px; /* Adjust for smaller screens */
+    }
+  }
+  
